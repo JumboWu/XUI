@@ -9,10 +9,10 @@ A UI Framework based at Unity 5.6.2f1 with ugui, also you can use for ngui
 >Assets<br>
 >>-Prefab<br>
 >>>App.prefab       App入口预设<br>
->>>UICanvas.prefab  UI画布预设<br>
+>>>UICanvas.prefab  UI画布预设
 >>-Scene<br>
 >>>level.unity      测试场景<br>
->>>Start.unity      测试场景<br>
+>>>Start.unity      测试场景
 >>-Script<br>
 >>>App.cs  程序入口脚本<br>
 >>>-XTools        XTools工具集<br>
