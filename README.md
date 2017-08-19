@@ -22,7 +22,7 @@ A UI Framework based at Unity 5.6.2f1 with ugui, also you can use for ngui
 >>>>			BaseUI.cs    UI抽象类<br>
 >>>>			UIBase.cs    UI基类<br>
 >>>>			UIManager.cs UI管理器<br>
->>		-UI               UI应用层<br>
+>>      -UI               UI应用层<br>
 >>>			-Prefab         UI预设<br>
 >>>>			-Resources    UI界面预设与脚本名对应<br>
 >>>>>				UIMainMenu.prefab<br>
