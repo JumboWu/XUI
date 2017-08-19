@@ -1,5 +1,9 @@
 # XUI
-A UI Framework based at Unity 5.6.2f1 with ugui, also you can use for ngui
+*****************************************************************
+ A UI Framework based at Unity 5.6.2f1 with ugui, also you can use for ngui
+ Jumbo @ 08/19/2017 Shanghai  
+******************************************************************
+
 
 ## 简介
 这是一个UI框架，基于Unity5.6.2f1,Demo中使用ugui，此框架也同样适用于ngui，稍加改动就可以了。
@@ -36,3 +40,6 @@ A UI Framework based at Unity 5.6.2f1 with ugui, also you can use for ngui
 ##  演示
 
 腾讯视频：https://v.qq.com/x/page/h0539q0iy3y.html
+
+## 项目
+Github：https://github.com/JumpWu/XUI
