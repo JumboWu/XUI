@@ -75,7 +75,7 @@ namespace X.UI
 		{
 			UIBase ui = null;
 			if (!_UIDict.TryGetValue (key, out ui)) {
-				GameObject go = GameObject.Instantiate(Resources.Load<GameObject>(key)) as GameObject;    
+				GameObject go = GameObject.Instantiate(Resources.Load<GameObject>("Prefab/"+key)) as GameObject;    
 				go.transform.SetParent(_canvas, false);
 				go.SetActive (false);
 				ui = go.GetComponent<UIBase> ();
