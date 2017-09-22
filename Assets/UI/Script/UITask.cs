@@ -1,12 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using X.UI;
-using X.Tools;
 
 public class UITask : UIBase {
 
-	public override void Init (Object[] parameters)
+	public override void Init (object[] parameters)
 	{
 		base.Init (parameters);
 	}
@@ -36,7 +33,7 @@ public class UITask : UIBase {
 	{
 		this.DisAppear ();
 
-		UIMainMenu ui = Singleton<UIManager>.Instance.GetUI<UIMainMenu>();
+		UIMainMenu ui = UIManager.Instance.GetUI<UIMainMenu>();
 
 		ui.Appear ();
 

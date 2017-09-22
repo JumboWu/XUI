@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
 /// <summary>
 /// UI抽象类，声明UI的通用行为方法
@@ -40,7 +38,7 @@ namespace X.UI
 		/// 初始化
 		/// </summary>
 		/// <param name="parameters">参数封箱，拆箱，自定义</param>
-		public virtual void Init(Object [] parameters)
+		public virtual void Init(object [] parameters)
 		{
 		}
 

@@ -1,7 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using X.Tools;
 
 /// <summary>
 /// UI基类，所有具体UI类继承该类
@@ -43,7 +40,7 @@ namespace X.UI
 		/// 初始化 UI数据传入
 		/// </summary>
 		/// <param name="parameters">参数封箱，拆箱，自定义</param>
-		public override void Init (Object[] parameters)
+		public override void Init (object[] parameters)
 		{
 			base.Init (parameters);
 
@@ -58,7 +55,7 @@ namespace X.UI
 			if (IsAppear)
 				return;
 			
-			UIManager uiManager = Singleton<UIManager>.Instance;
+			UIManager uiManager = UIManager.Instance;
 			if (uiManager.UIStackCount != 0)
 			{
 				UIBase curUI = uiManager.PeekUI ();
@@ -78,7 +75,7 @@ namespace X.UI
 			if (!IsAppear)
 				return;
 			
-			UIManager uiManager = Singleton<UIManager>.Instance;
+			UIManager uiManager = UIManager.Instance;
 			if (uiManager.UIStackCount != 0)
 			{
 				uiManager.PopUI ();

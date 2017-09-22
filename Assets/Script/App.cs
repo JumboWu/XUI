@@ -14,24 +14,23 @@ using X.UI;
 /// <summary>
 /// 程序应用入口
 /// </summary>
-public class App :  MonoSingleton<App>{
+public class App :  XMonoSingleton<App>{
 
-	protected override void Awake ()
-	{
-		base.Awake ();
+    protected override void OnAwake()
+    {
+        base.OnAwake();
+    }
 
-	}
+    protected override void OnStart()
+    {
+        base.OnStart();
 
-	protected void Start()
-	{
-		//演示
-		Singleton<UIManager>.Create();
+        //演示
 
-		UIMainMenu ui = Singleton<UIManager>.Instance.GetUI<UIMainMenu> ();
-		ui.Init (null);
-		ui.Appear ();
-	}
-		
+        UIMainMenu ui = UIManager.Instance.GetUI<UIMainMenu>();
+        ui.Init(null);
+        ui.Appear();
+    }
 
 	protected override void OnDestroy ()
 	{

@@ -1,9 +1,9 @@
 ﻿/*****************************************************************
  *      File:UIManager.cs
- *      UIManager实例创建：Singleton<UIManager>.Create();
+ *      
  *
- *		UI类获取：T ui = Singleton<UIManager>.Instance.GetUI<T> ();//T为UI类
- *      UI初始化：ui.init(Object [] parameters);
+ *		UI类获取：T ui = UIManager.Instance.GetUI<T> ();//T为UI类
+ *      UI初始化：ui.Init(object [] parameters);
  *		UI显示：ui.Appear ();
  * 
  *      Author:Jumbo @ 08/19/2017 Shanghai  Email:wjb0108@gmail.com
@@ -13,6 +13,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using X.Tools;
 
 
 /// <summary>
@@ -22,7 +23,7 @@ using System.Collections.Generic;
 namespace X.UI
 {
 	
-	public class UIManager
+	public class UIManager : XSingleton<UIManager>
     {
 		//所有的UI类字典容器存储，key：UI的prefab名称 ＝ 脚步命名规则  value：UI类型
 		private Dictionary<string, UIBase> _UIDict = new Dictionary<string, UIBase>();
@@ -32,7 +33,7 @@ namespace X.UI
 
         private Transform _canvas;//UGUI 画布
 
-        private UIManager()
+        public UIManager()
         {
             _canvas = GameObject.Find("UICanvas").transform; //场景中的画布节点名称
             foreach (Transform item in _canvas)

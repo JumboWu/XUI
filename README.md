@@ -5,6 +5,13 @@
  Jumbo @ 08/19/2017 Shanghai  
 ******************************************************************
 
+#version 0.0.2 09/22/2017
+修改UIManager.cs管理器 使用方式简化
+UI类获取：T ui = UIManager.Instance.GetUI<T> ();//T为UI类
+UI初始化：ui.Init(object [] parameters);
+UI显示：ui.Appear ();
+增加几个脚本工具
+--------------------------------------------------------
 
 ## 简介
 这是一个UI框架，基于Unity5.6.2f1,Demo中使用ugui，此框架也同样适用于ngui，稍加改动就可以了。
@@ -23,13 +30,16 @@
 >>>             -XTools        XTools工具集
 >>>>                    MonoSingleton.cs MonoBehavior单例
 >>>>                    Singleton.cs 普通单例
+>>>>                    XMonoBehavior.cs MonoBehavior子类
+>>>>                    XMonoSingleton.cs XMonoBehavior单例
+>>>>                    XSingleton.cs 普通单例
 >>>             -XUI           XUI框架底层
 >>>>                    BaseUI.cs    UI抽象类
 >>>>                    UIBase.cs    UI基类
 >>>>                    UIManager.cs UI管理器
 >>      -UI               UI应用层
->>>             -Prefab         UI预设
->>>>                    -Resources    UI界面预设与脚本名对应
+>>>             -Resources         
+>>>>                    -Prefab    UI界面预设与脚本名对应
 >>>>>                           UIMainMenu.prefab
 >>>>>                           UITask.prefab
 >>>             -Script         每个prefab对应一个以下同名的脚本，脚本基类UIBase
